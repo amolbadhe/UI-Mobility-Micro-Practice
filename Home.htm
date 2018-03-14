@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>    
+    <title>HTML and JS Test</title>
+
+    <script type="text/javascript">        
+
+        function Parent() {
+            console.log("In Parent");
+
+            //assets = ['funds']; this will not work 
+
+            this.assets = ['funds'];
+        }
+
+        Parent.prototype = {
+            assets : ['money']
+        };
+
+        var child = new Parent();
+
+        console.log(child.assets);
+    </script>
+</head>
+<body>
+    HI Welcome to UI-Mobility-Micro-Practice
+</body>
+</html>
